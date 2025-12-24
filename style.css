@@ -1,0 +1,192 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ebcfcf;
+}
+.page{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+.navbar{
+    position: relative;
+    background-color: #6DC3BB;
+    height: 15vh;
+}
+.navbar-contents{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-text{
+    font-size: 18px;
+    color: #333;    
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-right: 5vw;
+}
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.image{
+    width: 70px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: flex;
+    margin-left: 20px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.navbar-text input{
+    width: 30vw;
+    height: 35px;
+    padding-left: 30px;
+    border-radius: 5px;
+    border: 1px solid #2b0202;
+}
+.navbar-text input:hover{
+    cursor: pointer;
+    border: 1px solid wheat;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    padding-left: 30px;
+}
+.area{
+    position: absolute;
+    width: 100%;
+    height: 85vh;
+    background-color: #f9f5f5;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+
+}
+.your-music{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f9f5f5;
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+}
+.your-music img{
+    width: 100%;
+    height: 100%;
+}
+.music{
+    width: 200px;
+    height: 250px;
+    animation: scroll 0.8s ease forwards;
+    animation-delay: 0.2s;
+    border-radius: 10px;
+    object-fit: cover;
+    background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, #90AB8B, #355660) border-box;
+    border: 2px solid transparent;
+    background-color: white;
+    padding: 40px;
+    z-index: 999;
+    position: relative;
+    opacity: 0;
+}
+@keyframes scroll{
+from{
+    opacity: 0;
+    transform: translateY(20px);
+}
+to{
+    opacity: 1;
+    transform: translateY(0px);
+}
+}
+
+.music p{
+    text-align: center;
+    
+}
+.music img{
+    width: 100%;
+    height: 100%;
+}
+.head{
+  text-align:center;
+  font-weight:bold;
+  font-size:30px;
+  background:linear-gradient(#3DB6B1,#5a6778);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.music:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(#fff, #853b3b) ;
+}
+.fun-bar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #6DC3BB;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1000;
+
+}
+.fun-bar i{
+    font-size: 30px;
+    background:linear-gradient(#1B3C53,#456882);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+
+}
+.fun-bar i:hover{
+    cursor: pointer;
+    color: white;
+}
+.play-range{
+    width: 50vw;
+    height: 2px;
+    color: black;
+    accent-color: black;
+}
+
+.play-range::-webkit-slider-thumb {
+    background: black;
+}
+
+.play-range::-moz-range-thumb {
+    background: black;
+    border: none;
+}
+.heart{
+    font-size: 24px; color: red;
+}
